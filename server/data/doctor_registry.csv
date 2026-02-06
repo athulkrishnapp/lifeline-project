@@ -1,0 +1,101 @@
+license_id,full_name,workplace_name,email
+MCI-2024-001,Dr. Liz George,Apollo Hospital,liz.george@lifeline.com
+MCI-2024-002,Dr. A. Kumar,City Heart Clinic,kumar.cardio@lifeline.com
+MCI-2024-003,Dr. Sarah Smith,Skin Care Center,sarah.derma@lifeline.com
+MCI-2024-004,Dr. Rajesh Koothrappali,Caltech Medical,rajesh.k@lifeline.com
+MCI-2024-005,Dr. Meredith Grey,Grey Sloan Memorial,meredith.g@lifeline.com
+MCI-2024-006,Dr. Gregory House,Princeton Plainsboro,house.g@lifeline.com
+MCI-2024-007,Dr. Shaun Murphy,San Jose St. Bonaventure,shaun.m@lifeline.com
+MCI-2024-008,Dr. Stephen Strange,Metro General,strange.s@lifeline.com
+MCI-2024-009,Dr. John Watson,Baker Street Clinic,watson.j@lifeline.com
+MCI-2024-010,Dr. Leonard McCoy,Starfleet Medical,mccoy.l@lifeline.com
+MCI-2024-011,Dr. Hannibal Lecter,Baltimore State Hospital,lecter.h@lifeline.com
+MCI-2024-012,Dr. Ken Jeong,Kaiser Permanente,jeong.k@lifeline.com
+MCI-2024-013,Dr. Sanjay Gupta,Emory Healthcare,gupta.s@lifeline.com
+MCI-2024-014,Dr. Naresh Trehan,Medanta,trehan.n@lifeline.com
+MCI-2024-015,Dr. Devi Shetty,Narayana Health,shetty.d@lifeline.com
+MCI-2024-016,Dr. Prathap C Reddy,Apollo Hospitals,reddy.p@lifeline.com
+MCI-2024-017,Dr. Siddhartha Mukherjee,Columbia University,mukherjee.s@lifeline.com
+MCI-2024-018,Dr. Atul Gawande,Brigham and Women's,gawande.a@lifeline.com
+MCI-2024-019,Dr. Moncef Slaoui,GlaxoSmithKline,slaoui.m@lifeline.com
+MCI-2024-020,Dr. Anthony Fauci,NIAID,fauci.a@lifeline.com
+MCI-2024-021,Dr. Paul Farmer,Partners In Health,farmer.p@lifeline.com
+MCI-2024-022,Dr. Bennet Omalu,UC Davis,omalu.b@lifeline.com
+MCI-2024-023,Dr. Patch Adams,Gesundheit Institute,adams.p@lifeline.com
+MCI-2024-024,Dr. Oliver Sacks,Beth Abraham Hospital,sacks.o@lifeline.com
+MCI-2024-025,Dr. Michio Kaku,City College of New York,kaku.m@lifeline.com
+MCI-2024-026,Dr. Neil deGrasse Tyson,Hayden Planetarium,tyson.n@lifeline.com
+MCI-2024-027,Dr. Jane Goodall,Gombe Stream,goodall.j@lifeline.com
+MCI-2024-028,Dr. Mayim Bialik,UCLA,bialik.m@lifeline.com
+MCI-2024-029,Dr. Brian Cox,University of Manchester,cox.b@lifeline.com
+MCI-2024-030,Dr. Richard Feynman,Caltech,feynman.r@lifeline.com
+MCI-2024-031,Dr. Carl Sagan,Cornell University,sagan.c@lifeline.com
+MCI-2024-032,Dr. Stephen Hawking,Cambridge University,hawking.s@lifeline.com
+MCI-2024-033,Dr. Marie Curie,Sorbonne,curie.m@lifeline.com
+MCI-2024-034,Dr. Albert Einstein,Princeton,einstein.a@lifeline.com
+MCI-2024-035,Dr. Isaac Newton,Trinity College,newton.i@lifeline.com
+MCI-2024-036,Dr. Charles Darwin,Down House,darwin.c@lifeline.com
+MCI-2024-037,Dr. Nikola Tesla,Tesla Electric,tesla.n@lifeline.com
+MCI-2024-038,Dr. Thomas Edison,Menlo Park,edison.t@lifeline.com
+MCI-2024-039,Dr. Alexander Fleming,St Mary's Hospital,fleming.a@lifeline.com
+MCI-2024-040,Dr. Louis Pasteur,Pasteur Institute,pasteur.l@lifeline.com
+MCI-2024-041,Dr. Florence Nightingale,St Thomas' Hospital,nightingale.f@lifeline.com
+MCI-2024-042,Dr. Clara Barton,American Red Cross,barton.c@lifeline.com
+MCI-2024-043,Dr. Elizabeth Blackwell,New York Infirmary,blackwell.e@lifeline.com
+MCI-2024-044,Dr. Virginia Apgar,Columbia University,apgar.v@lifeline.com
+MCI-2024-045,Dr. Jonas Salk,Salk Institute,salk.j@lifeline.com
+MCI-2024-046,Dr. Edward Jenner,Berkeley,jenner.e@lifeline.com
+MCI-2024-047,Dr. Joseph Lister,King's College,lister.j@lifeline.com
+MCI-2024-048,Dr. Sigmund Freud,University of Vienna,freud.s@lifeline.com
+MCI-2024-049,Dr. Carl Jung,Burghölzli,jung.c@lifeline.com
+MCI-2024-050,Dr. Ivan Pavlov,Military Medical Academy,pavlov.i@lifeline.com
+MCI-2024-051,Dr. B.F. Skinner,Harvard University,skinner.b@lifeline.com
+MCI-2024-052,Dr. Jean Piaget,University of Geneva,piaget.j@lifeline.com
+MCI-2024-053,Dr. Abraham Maslow,Brandeis University,maslow.a@lifeline.com
+MCI-2024-054,Dr. Carl Rogers,University of Chicago,rogers.c@lifeline.com
+MCI-2024-055,Dr. Erik Erikson,Harvard,erikson.e@lifeline.com
+MCI-2024-056,Dr. Noam Chomsky,MIT,chomsky.n@lifeline.com
+MCI-2024-057,Dr. Jordan Peterson,University of Toronto,peterson.j@lifeline.com
+MCI-2024-058,Dr. Sam Harris,Project Reason,harris.s@lifeline.com
+MCI-2024-059,Dr. Yuval Noah Harari,Hebrew University,harari.y@lifeline.com
+MCI-2024-060,Dr. Daniel Kahneman,Princeton,kahneman.d@lifeline.com
+MCI-2024-061,Dr. Malcolm Gladwell,The New Yorker,gladwell.m@lifeline.com
+MCI-2024-062,Dr. Nassim Taleb,NYU Tandon,taleb.n@lifeline.com
+MCI-2024-063,Dr. Steven Pinker,Harvard,pinker.s@lifeline.com
+MCI-2024-064,Dr. Richard Dawkins,University of Oxford,dawkins.r@lifeline.com
+MCI-2024-065,Dr. Christopher Hitchens,Vanity Fair,hitchens.c@lifeline.com
+MCI-2024-066,Dr. Elon Musk,SpaceX Medical,musk.e@lifeline.com
+MCI-2024-067,Dr. Jeff Bezos,Blue Origin Health,bezos.j@lifeline.com
+MCI-2024-068,Dr. Bill Gates,Gates Foundation,gates.b@lifeline.com
+MCI-2024-069,Dr. Mark Zuckerberg,Chan Zuckerberg Biohub,zuckerberg.m@lifeline.com
+MCI-2024-070,Dr. Sundar Pichai,Google Health,pichai.s@lifeline.com
+MCI-2024-071,Dr. Satya Nadella,Microsoft Health,nadella.s@lifeline.com
+MCI-2024-072,Dr. Tim Cook,Apple Health,cook.t@lifeline.com
+MCI-2024-073,Dr. Sheryl Sandberg,Lean In Health,sandberg.s@lifeline.com
+MCI-2024-074,Dr. Indra Nooyi,PepsiCo Health,nooyi.i@lifeline.com
+MCI-2024-075,Dr. Kiran Mazumdar-Shaw,Biocon,mazumdar.k@lifeline.com
+MCI-2024-076,Dr. Cyrus Poonawalla,Serum Institute,poonawalla.c@lifeline.com
+MCI-2024-077,Dr. Adar Poonawalla,Serum Institute,poonawalla.a@lifeline.com
+MCI-2024-078,Dr. Krishna Ella,Bharat Biotech,ella.k@lifeline.com
+MCI-2024-079,Dr. Soumya Swaminathan,WHO,swaminathan.s@lifeline.com
+MCI-2024-080,Dr. Tedros Adhanom,WHO,adhanom.t@lifeline.com
+MCI-2024-081,Dr. Rochelle Walensky,CDC,walensky.r@lifeline.com
+MCI-2024-082,Dr. Francis Collins,NIH,collins.f@lifeline.com
+MCI-2024-083,Dr. Vivek Murthy,US Surgeon General,murthy.v@lifeline.com
+MCI-2024-084,Dr. Ashish Jha,White House COVID Response,jha.a@lifeline.com
+MCI-2024-085,Dr. Eric Topol,Scripps Research,topol.e@lifeline.com
+MCI-2024-086,Dr. Robert Califf,FDA,califf.r@lifeline.com
+MCI-2024-087,Dr. Scott Gottlieb,AEI,gottlieb.s@lifeline.com
+MCI-2024-088,Dr. Jerome Adams,Purdue University,adams.j@lifeline.com
+MCI-2024-089,Dr. Sanjay Gupta,CNN Medical,gupta.cnn@lifeline.com
+MCI-2024-090,Dr. Mehmet Oz,Columbia University,oz.m@lifeline.com
+MCI-2024-091,Dr. Phil McGraw,Dr. Phil Show,mcgraw.p@lifeline.com
+MCI-2024-092,Dr. Drew Pinsky,Dr. Drew,pinsky.d@lifeline.com
+MCI-2024-093,Dr. Travis Stork,The Doctors,stork.t@lifeline.com
+MCI-2024-094,Dr. Jennifer Ashton,ABC News,ashton.j@lifeline.com
+MCI-2024-095,Dr. Richard Besser,Robert Wood Johnson Fdn,besser.r@lifeline.com
+MCI-2024-096,Dr. Nancy Snyderman,NBC News,snyderman.n@lifeline.com
+MCI-2024-097,Dr. Devi Sridhar,University of Edinburgh,sridhar.d@lifeline.com
+MCI-2024-098,Dr. John Campbell,YouTube Health,campbell.j@lifeline.com
+MCI-2024-099,Dr. Mike Varshavski,Dr. Mike,varshavski.m@lifeline.com
+MCI-2024-100,Dr. ZDoggMD,Health 3.0,zdogg.m@lifeline.com

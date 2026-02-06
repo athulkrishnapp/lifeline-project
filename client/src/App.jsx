@@ -1,35 +1,38 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Home from './pages/Home'; // The new Landing Page
+import Login from './pages/Login';
+import Register from './pages/Register';
+import PatientDashboard from './pages/PatientDashboard';
+import DoctorDashboard from './pages/DoctorDashboard';
+import PharmacistDashboard from './pages/PharmacistDashboard';
+import BookAppointment from './pages/BookAppointment';
+import MyRecords from './pages/MyRecords';
+import ProfileSettings from './pages/ProfileSettings';
+import AIChat from './pages/AIChat';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className="app-container">
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        
+        {/* Protected Feature Pages */}
+        <Route path="/patient-dashboard" element={<PatientDashboard />} />
+        <Route path="/doctor-dashboard" element={<DoctorDashboard />} />
+        <Route path="/pharmacist-dashboard" element={<PharmacistDashboard />} />
+        
+        <Route path="/book-appointment" element={<BookAppointment />} />
+        <Route path="/my-records" element={<MyRecords />} />
+        <Route path="/profile" element={<ProfileSettings />} />
+        <Route path="/ai-chat" element={<AIChat />} />
+      </Routes>
+    </div>
+  );
 }
 
-export default App
+export default App;

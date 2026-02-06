@@ -1,0 +1,455 @@
+generic_name,brand_name,manufacturer,price_inr,category,dosage
+Sitagliptin,Sitgly SR,Torrent,96.46,Diabetes,50mg
+Clindamycin,Moxmol Duo,Pfizer,149.94,Antibiotic,300mg
+Cetirizine,Cetiox Duo,Torrent,34.71,Allergy/Resp,10mg
+Escitalopram,Fexmax Plus,Pfizer,93.14,Neuro/Psych,10mg
+Ramipril,Ramiex Plus,USV,75.38,Cardiology,5mg
+Doxycycline,Abb-dox Forte,Abbott,37.41,Antibiotic,100mg
+Linezolid,Lineon Trio,Micro Labs,381.7,Antibiotic,600mg
+Amikacin,Gabvac Plus,Abbott,117.13,Antibiotic,500mg
+Cefpodoxime,Cefcid DS,Zydus Cadila,134.15,Antibiotic,200mg
+Doxycycline,Gabpan XR,USV,34.84,Antibiotic,100mg
+Diclofenac,Cip-dic XR,Cipla,20.7,Pain Relief,50mg
+Doxycycline,Gle-dox SR,Glenmark,25.1,Antibiotic,100mg
+Atenolol,Atecid DS,Torrent,26.66,Cardiology,50mg
+Theophylline,Tor-the Plus,Torrent,57.79,Allergy/Resp,400mg
+Domperidone,Domcip Duo,Cipla,35.44,Gastrointestinal,10mg
+Ranitidine,Abb-ran Duo,Abbott,25.03,Gastrointestinal,150mg
+Clopidogrel,San-clo SR,Sanofi,66.56,Cardiology,75mg
+Levocetirizine,Levmox DS,Alembic,43.16,Allergy/Resp,5mg
+Fluoxetine,Flumox SR,Abbott,55.35,Neuro/Psych,20mg
+Azithromycin,Gle-azi Forte,Glenmark,132.46,Antibiotic,500mg
+Clonazepam,Clo-ra,Dr. Reddys,43.18,Neuro/Psych,0.5mg
+Augmentin,Gsk-aug XR,GSK,156.6,Antibiotic,625mg
+Ibuprofen,Ibupon XR,Lupin,18.57,Pain Relief,400mg
+Ibuprofen,Metplus SR,Micro Labs,16.76,Pain Relief,400mg
+Naproxen,Nap-stat,Wockhardt,47.58,Pain Relief,500mg
+Amikacin,Ami-ril Forte,Wockhardt,138.22,Antibiotic,500mg
+Atenolol,Sun-ate,Sun Pharma,29.94,Cardiology,50mg
+Telmisartan,Telmon Trio,Mankind,86.62,Cardiology,40mg
+Fluoxetine,Flu-gly Trio,Zydus Cadila,77.04,Neuro/Psych,20mg
+Metronidazole,Metrix Forte,Mankind,17.22,Antibiotic,400mg
+Pantoprazole,Pantax Plus,Alkem,78.64,Gastrointestinal,40mg
+Levocetirizine,Levoix DS 28,Lupin,57.15,Allergy/Resp,5mg
+Ondansetron,Vasone Forte,USV,48.63,Gastrointestinal,4mg
+Enalapril,Ena-ra Forte,Zydus Cadila,36.69,Cardiology,5mg
+Ondansetron,Ondaox,Torrent,45.03,Gastrointestinal,4mg
+Naproxen,Napwin XR,Dr. Reddys,54.07,Pain Relief,500mg
+Sitagliptin,Sitone Plus,Sun Pharma,136.24,Diabetes,50mg
+Ranitidine,Dr.-ran 84,Dr. Reddys,16.71,Gastrointestinal,150mg
+Linezolid,Brudine Forte,Intas,388.12,Antibiotic,600mg
+Cefixime,Woc-cef DS,Wockhardt,102.62,Antibiotic,200mg
+Telmisartan,Telmon Trio 20,Zydus Cadila,85.78,Cardiology,40mg
+Cetirizine,Cetiox DS,Mankind,36.93,Allergy/Resp,10mg
+Theophylline,The-care Duo,Sanofi,68.27,Allergy/Resp,400mg
+Dapagliflozin,Rabcet Forte,Sanofi,195.7,Diabetes,10mg
+Diclofenac,Diclax DS,Sanofi,27.72,Pain Relief,50mg
+Aspirin,Ale-asp Plus,Alembic,8.23,Pain Relief,75mg
+Sertraline,Sertaz Plus,GSK,71.39,Neuro/Psych,50mg
+Gliclazide,Gliril Duo,Glenmark,84.2,Diabetes,80mg
+Montelukast,Monsafe DS,Pfizer,85.02,Allergy/Resp,10mg
+Voglibose,Voglon Plus,USV,60.86,Diabetes,0.2mg
+Vildagliptin,Glucra XR,Dr. Reddys,153.82,Diabetes,50mg
+Linezolid,Lineon Forte,Wockhardt,318.64,Antibiotic,600mg
+Glimepiride,Tor-gli XR,Torrent,49.67,Diabetes,1mg
+Etoricoxib,Sun-eto DS,Sun Pharma,111.42,Pain Relief,90mg
+Voglibose,Abb-vog Duo,Abbott,83.82,Diabetes,0.2mg
+Losartan,Los-cip Duo,Wockhardt,56.34,Cardiology,50mg
+Diclofenac,Diclax SR,Lupin,25.49,Pain Relief,50mg
+Ofloxacin,Lipstat Forte,Alembic,55.84,Antibiotic,200mg
+Ranitidine,Ran-vas Plus,Alembic,19.09,Gastrointestinal,150mg
+Ramipril,Ramcip,Torrent,75.56,Cardiology,5mg
+Tramadol,Tra-star SR 70,Ipca Labs,62.06,Pain Relief,50mg
+Metformin,Met-star Duo,Sanofi,41.89,Diabetes,500mg
+Voglibose,Vog-norm Plus,Micro Labs,72.61,Diabetes,0.2mg
+Ofloxacin,Rabvac Trio,Wockhardt,50.91,Antibiotic,200mg
+Amlodipine,Lup-aml DS 77,Lupin,29.34,Cardiology,5mg
+Aspirin,Aspvac Duo,USV,10.95,Pain Relief,75mg
+Pantoprazole,Pfi-pan,Pfizer,101.33,Gastrointestinal,40mg
+Tramadol,Tramex Plus,Wockhardt,62.54,Pain Relief,50mg
+Enalapril,Enalon,Wockhardt,28.95,Cardiology,5mg
+Salbutamol,Usv-sal XR,USV,12.78,Allergy/Resp,4mg
+Domperidone,Dom-plus Forte,Cipla,28.39,Gastrointestinal,10mg
+Aspirin,Brutaz Forte,Sun Pharma,8.0,Pain Relief,75mg
+Tramadol,Tra-star SR,Sanofi,68.82,Pain Relief,50mg
+Clindamycin,Clizen,Ipca Labs,166.04,Antibiotic,300mg
+Atenolol,Salsafe Forte 54,Aristo,24.99,Cardiology,50mg
+Naproxen,Gsk-nap SR,GSK,53.64,Pain Relief,500mg
+Pregabalin,Lospro SR,Glenmark,138.01,Neuro/Psych,75mg
+Vildagliptin,Vildax XR,Wockhardt,141.53,Diabetes,50mg
+Omeprazole,Ome-cet XR,Ipca Labs,47.3,Gastrointestinal,20mg
+Cetirizine,Cet-taz,Torrent,42.22,Allergy/Resp,10mg
+Gabapentin,Gab-taz XR,Alembic,94.58,Neuro/Psych,300mg
+Amikacin,Amikon XR,Alembic,97.19,Antibiotic,500mg
+Enalapril,Enacare,Cipla,43.0,Cardiology,5mg
+Pregabalin,Pre-mol Trio,Mankind,91.18,Neuro/Psych,75mg
+Diclofenac,Dic-pan DS,Ipca Labs,24.35,Pain Relief,50mg
+Metronidazole,Storpan DS,Ipca Labs,17.26,Antibiotic,400mg
+Pregabalin,Tor-pre XR,Torrent,95.23,Neuro/Psych,75mg
+Aceclofenac,Gsk-ace,GSK,32.92,Pain Relief,100mg
+Clonazepam,Clo-nac Plus,USV,52.61,Neuro/Psych,0.5mg
+Metformin,Met-cid DS,Sanofi,38.64,Diabetes,500mg
+Vildagliptin,Abb-vil,Abbott,127.09,Diabetes,50mg
+Rabeprazole,Omeplus,Pfizer,80.36,Gastrointestinal,20mg
+Voglibose,Vog-mox SR,Sanofi,73.92,Diabetes,0.2mg
+Rosuvastatin,Vascip SR,Alembic,148.66,Cardiology,10mg
+Sertraline,Alppro SR,Lupin,98.53,Neuro/Psych,50mg
+Ciprofloxacin,Cip-care DS,Cipla,49.78,Antibiotic,500mg
+Gliclazide,Glizen SR,Mankind,66.02,Diabetes,80mg
+Pantoprazole,Usv-pan XR,USV,88.54,Gastrointestinal,40mg
+Amikacin,Ami-met Duo,Zydus Cadila,141.02,Antibiotic,500mg
+Ramipril,Fexril Duo,Dr. Reddys,72.5,Cardiology,5mg
+Paracetamol,Par-plus XR,Abbott,38.18,Pain Relief,650mg
+Naproxen,Naprax Duo,Micro Labs,41.35,Pain Relief,500mg
+Clopidogrel,Gsk-clo SR,GSK,64.71,Cardiology,75mg
+Tramadol,Traone XR,Glenmark,71.72,Pain Relief,50mg
+Metronidazole,Met-zen Forte,Sun Pharma,16.09,Antibiotic,400mg
+Clindamycin,Gle-cli Duo,Glenmark,158.45,Antibiotic,300mg
+Pregabalin,Pre-plus SR,Intas,112.89,Neuro/Psych,75mg
+Esomeprazole,Esoplus DS,Sanofi,85.47,Gastrointestinal,40mg
+Cefpodoxime,Cef-vac Duo,Micro Labs,127.17,Antibiotic,200mg
+Fexofenadine,Fexoon SR,Aristo,99.18,Allergy/Resp,120mg
+Montelukast,Serwin,Glenmark,75.55,Allergy/Resp,10mg
+Metoprolol,Metoix Forte,Dr. Reddys,60.85,Cardiology,50mg
+Ciprofloxacin,Alk-cip SR,Alkem,45.27,Antibiotic,500mg
+Pregabalin,Prefine Plus,Abbott,107.86,Neuro/Psych,75mg
+Pregabalin,Pregix Duo,Intas,129.31,Neuro/Psych,75mg
+Salbutamol,Omezen Duo,Pfizer,13.55,Allergy/Resp,4mg
+Alprazolam,Alprix,Alembic,46.55,Neuro/Psych,0.5mg
+Levofloxacin,Levzen Forte,GSK,70.03,Antibiotic,500mg
+Alprazolam,Alprox Plus,Zydus Cadila,60.44,Neuro/Psych,0.5mg
+Pioglitazone,Piogex XR,Pfizer,52.55,Diabetes,15mg
+Amlodipine,Aml-norm Trio,Intas,38.12,Cardiology,5mg
+Atenolol,Atenix DS,Cipla,31.43,Cardiology,50mg
+Cefpodoxime,Man-cef Duo,Mankind,116.62,Antibiotic,200mg
+Piroxicam,Metmet Forte,Zydus Cadila,43.89,Pain Relief,20mg
+Losartan,Los-care Trio,Pfizer,56.61,Cardiology,50mg
+Glimepiride,Ipc-gli Forte,Ipca Labs,48.59,Diabetes,1mg
+Atenolol,Tor-ate Plus,Torrent,29.55,Cardiology,50mg
+Clindamycin,Clinix Forte,Glenmark,157.54,Antibiotic,300mg
+Omeprazole,Omepox SR,GSK,61.14,Gastrointestinal,20mg
+Levocetirizine,Lev-one Duo,Lupin,49.64,Allergy/Resp,5mg
+Cetirizine,Cetiex Forte,Cipla,38.26,Allergy/Resp,10mg
+Ciprofloxacin,Aztwin Forte,Wockhardt,34.98,Antibiotic,500mg
+Escitalopram,Abb-esc DS,Abbott,103.72,Neuro/Psych,10mg
+Domperidone,Tenstar Plus,Dr. Reddys,25.2,Gastrointestinal,10mg
+Piroxicam,Piroax Duo 13,Abbott,50.12,Pain Relief,20mg
+Piroxicam,Usv-pir DS,USV,50.15,Pain Relief,20mg
+Esomeprazole,Alk-eso Plus,Alkem,108.64,Gastrointestinal,40mg
+Cefpodoxime,Cef-win XR,GSK,128.98,Antibiotic,200mg
+Rabeprazole,Rabeax SR,Abbott,72.09,Gastrointestinal,20mg
+Sitagliptin,Sittaz,Abbott,122.08,Diabetes,50mg
+Diclofenac,Abb-dic Duo,Abbott,30.68,Pain Relief,50mg
+Atenolol,Ategly,Micro Labs,26.06,Cardiology,50mg
+Enalapril,Ena-safe XR,Zydus Cadila,33.09,Cardiology,5mg
+Ranitidine,Telpro Plus 81,Glenmark,18.87,Gastrointestinal,150mg
+Doxycycline,Doxfen,Abbott,37.0,Antibiotic,100mg
+Aspirin,Aspiax,Abbott,11.23,Pain Relief,75mg
+Atorvastatin,Prevac XR,Alembic,98.69,Cardiology,10mg
+Azithromycin,Montvas Trio,Sun Pharma,124.71,Antibiotic,500mg
+Doxycycline,Doxyex XR,Lupin,37.65,Antibiotic,100mg
+Gliclazide,Glicix Trio,Abbott,61.02,Diabetes,80mg
+Augmentin,Alpsafe DS,Ipca Labs,232.26,Antibiotic,625mg
+Glimepiride,Rabstat,Aristo,42.24,Diabetes,1mg
+Tramadol,Caldine Trio,Wockhardt,58.64,Pain Relief,50mg
+Ranitidine,Glucpro,Intas,25.35,Gastrointestinal,150mg
+Clonazepam,Zyd-clo XR,Zydus Cadila,49.54,Neuro/Psych,0.5mg
+Domperidone,Dompax Trio,Lupin,25.58,Gastrointestinal,10mg
+Amoxicillin,Amoxex Forte,USV,85.56,Antibiotic,500mg
+Sitagliptin,Sitaax,Intas,137.72,Diabetes,50mg
+Sitagliptin,Sun-sit Duo,Sun Pharma,138.49,Diabetes,50mg
+Metoprolol,Dr.-met Forte,Dr. Reddys,54.57,Cardiology,50mg
+Loperamide,Lopeox Forte,Micro Labs,19.13,Gastrointestinal,2mg
+Ranitidine,Ranwin Plus,Dr. Reddys,24.06,Gastrointestinal,150mg
+Cefpodoxime,Telcip Trio,Abbott,169.66,Antibiotic,200mg
+Sitagliptin,Sitcip Plus,Wockhardt,125.45,Diabetes,50mg
+Telmisartan,Caltaz XR,Aristo,72.76,Cardiology,40mg
+Glimepiride,Gli-cid,Alembic,40.49,Diabetes,1mg
+Metformin,Met-taz Forte,Zydus Cadila,30.33,Diabetes,500mg
+Ibuprofen,Woc-ibu SR,Wockhardt,16.18,Pain Relief,400mg
+Salbutamol,Sal-care Plus,USV,18.7,Allergy/Resp,4mg
+Domperidone,Domplus Duo,Alkem,26.59,Gastrointestinal,10mg
+Amikacin,Esonorm SR,Alembic,141.0,Antibiotic,500mg
+Rabeprazole,Rabstat XR,GSK,82.59,Gastrointestinal,20mg
+Metronidazole,Metgly Trio,Sun Pharma,16.88,Antibiotic,400mg
+Rabeprazole,Gabvac SR,Glenmark,69.72,Gastrointestinal,20mg
+Domperidone,Ipc-dom,Ipca Labs,28.05,Gastrointestinal,10mg
+Esomeprazole,Esogly DS,GSK,88.29,Gastrointestinal,40mg
+Levofloxacin,Gabril Plus,Torrent,94.62,Antibiotic,500mg
+Cetirizine,Cet-mol Plus,Dr. Reddys,40.19,Allergy/Resp,10mg
+Dapagliflozin,Dap-pan DS,Aristo,177.95,Diabetes,10mg
+Cefpodoxime,Cef-ril SR,Micro Labs,130.17,Antibiotic,200mg
+Esomeprazole,Cip-eso XR,Cipla,107.22,Gastrointestinal,40mg
+Dapagliflozin,Dapaon Duo 86,Torrent,167.58,Diabetes,10mg
+Cetirizine,Preril Duo,Wockhardt,45.3,Allergy/Resp,10mg
+Cefixime,Ceffen DS,Torrent,89.59,Antibiotic,200mg
+Omeprazole,Omera XR,Pfizer,42.65,Gastrointestinal,20mg
+Cetirizine,Cet-max DS,USV,33.39,Allergy/Resp,10mg
+Cetirizine,Cetiox SR,Micro Labs,43.63,Allergy/Resp,10mg
+Omeprazole,Ome-vas Duo,Alembic,61.8,Gastrointestinal,20mg
+Esomeprazole,Eso-mox XR 41,Dr. Reddys,122.13,Gastrointestinal,40mg
+Escitalopram,Escion,Alkem,78.37,Neuro/Psych,10mg
+Pioglitazone,Piogix SR,Mankind,49.67,Diabetes,15mg
+Cefixime,Abb-cef Trio,Abbott,110.49,Antibiotic,200mg
+Alprazolam,Alp-ril Duo,Cipla,42.31,Neuro/Psych,0.5mg
+Metronidazole,Metril Trio,Cipla,16.25,Antibiotic,400mg
+Piroxicam,Cip-pir SR,Cipla,43.19,Pain Relief,20mg
+Alprazolam,Alpdine DS,GSK,42.42,Neuro/Psych,0.5mg
+Amoxicillin,Amoxon,Zydus Cadila,112.23,Antibiotic,500mg
+Clopidogrel,Clopon XR,Alembic,79.01,Cardiology,75mg
+Telmisartan,Tel-vas DS,Mankind,101.39,Cardiology,40mg
+Atorvastatin,Gsk-ato Trio,GSK,96.1,Cardiology,10mg
+Paracetamol,Mic-par,Micro Labs,31.6,Pain Relief,650mg
+Mefenamic Acid,Mefnorm Trio,Pfizer,55.49,Pain Relief,500mg
+Ondansetron,Ondfen Forte,Lupin,49.56,Gastrointestinal,4mg
+Metoprolol,Man-met Plus,Mankind,43.97,Cardiology,50mg
+Clindamycin,Clifine SR,Torrent,154.05,Antibiotic,300mg
+Ramipril,Sermol,Alkem,56.49,Cardiology,5mg
+Amikacin,Amiplus Forte,Cipla,112.85,Antibiotic,500mg
+Fexofenadine,Fexvac XR,Mankind,109.84,Allergy/Resp,120mg
+Paracetamol,Man-par Plus,Mankind,24.55,Pain Relief,650mg
+Salbutamol,Salbox DS,Glenmark,15.61,Allergy/Resp,4mg
+Aceclofenac,Mic-ace DS,Micro Labs,43.67,Pain Relief,100mg
+Gliclazide,Gli-cet,Sun Pharma,68.05,Diabetes,80mg
+Fexofenadine,Fex-nac DS,GSK,114.32,Allergy/Resp,120mg
+Rabeprazole,Rabeex Duo,Alkem,71.88,Gastrointestinal,20mg
+Mefenamic Acid,Mef-pro XR,Alkem,50.44,Pain Relief,500mg
+Etoricoxib,Etofine SR,Alkem,92.35,Pain Relief,90mg
+Fexofenadine,Fexstar DS,Mankind,104.99,Allergy/Resp,120mg
+Diclofenac,Diclix,Ipca Labs,27.24,Pain Relief,50mg
+Dapagliflozin,Dap-norm Duo,Alkem,159.05,Diabetes,10mg
+Glimepiride,Glimox Forte,Lupin,35.32,Diabetes,1mg
+Amoxicillin,Tor-amo XR,Torrent,102.22,Antibiotic,500mg
+Fluoxetine,Prevac XR 28,Micro Labs,60.04,Neuro/Psych,20mg
+Ciprofloxacin,Cip-one Plus,Sun Pharma,43.33,Antibiotic,500mg
+Montelukast,Abb-mon Trio,Abbott,75.9,Allergy/Resp,10mg
+Aceclofenac,Acecare Forte,Cipla,43.59,Pain Relief,100mg
+Voglibose,Vogone Duo,Sanofi,86.57,Diabetes,0.2mg
+Telmisartan,Telfine Plus,Aristo,77.2,Cardiology,40mg
+Metformin,San-met Forte,Sanofi,40.37,Diabetes,500mg
+Ofloxacin,Man-ofl DS,Mankind,50.69,Antibiotic,200mg
+Naproxen,Nap-norm Duo,Alembic,45.4,Pain Relief,500mg
+Clindamycin,Clinix DS,Alkem,130.69,Antibiotic,300mg
+Loperamide,Sun-lop Plus,Sun Pharma,13.24,Gastrointestinal,2mg
+Ondansetron,Ondaax Trio,Micro Labs,44.8,Gastrointestinal,4mg
+Escitalopram,Vasnac Duo,Abbott,112.77,Neuro/Psych,10mg
+Piroxicam,Tor-pir Plus 98,Torrent,50.2,Pain Relief,20mg
+Amoxicillin,Amo-met,Torrent,88.62,Antibiotic,500mg
+Amoxicillin,Amo-gly Trio,Pfizer,127.46,Antibiotic,500mg
+Ciprofloxacin,Moxmox,Torrent,38.24,Antibiotic,500mg
+Piroxicam,Zyd-pir Duo,Zydus Cadila,49.33,Pain Relief,20mg
+Metoprolol,Brutaz SR,Wockhardt,57.06,Cardiology,50mg
+Levocetirizine,Man-lev Trio,Mankind,43.3,Allergy/Resp,5mg
+Theophylline,Theoox Duo,Intas,63.14,Allergy/Resp,400mg
+Ramipril,Cipsafe XR,Sanofi,49.82,Cardiology,5mg
+Pantoprazole,Int-pan SR,Intas,88.86,Gastrointestinal,40mg
+Amoxicillin,Amofine,Ipca Labs,94.22,Antibiotic,500mg
+Piroxicam,Pirdine,Aristo,43.23,Pain Relief,20mg
+Naproxen,Napfen SR,Alkem,57.82,Pain Relief,500mg
+Gabapentin,Aztvas DS,Alkem,123.59,Neuro/Psych,300mg
+Amlodipine,Lup-aml DS,Lupin,35.84,Cardiology,5mg
+Ranitidine,Ranzen Plus,USV,19.59,Gastrointestinal,150mg
+Amlodipine,Clocid Duo,Sun Pharma,28.29,Cardiology,5mg
+Gabapentin,Gabsafe Plus,Abbott,114.93,Neuro/Psych,300mg
+Aspirin,Cipplus SR,Aristo,11.53,Pain Relief,75mg
+Azithromycin,Clopan,GSK,110.65,Antibiotic,500mg
+Dapagliflozin,Dapfine Plus,Ipca Labs,164.95,Diabetes,10mg
+Escitalopram,Precet Plus,Wockhardt,74.25,Neuro/Psych,10mg
+Aceclofenac,Prepro SR,Aristo,43.56,Pain Relief,100mg
+Theophylline,Theoex,Abbott,67.84,Allergy/Resp,400mg
+Rabeprazole,Rabeax Duo,Wockhardt,90.06,Gastrointestinal,20mg
+Enalapril,Usv-ena SR,USV,33.48,Cardiology,5mg
+Tramadol,Woc-tra Plus,Wockhardt,63.97,Pain Relief,50mg
+Pioglitazone,Salpro Plus,Pfizer,69.07,Diabetes,15mg
+Etoricoxib,Etotaz Plus,Sanofi,81.82,Pain Relief,90mg
+Levocetirizine,Levpro Plus,Glenmark,41.0,Allergy/Resp,5mg
+Ondansetron,Gabwin XR,Dr. Reddys,37.38,Gastrointestinal,4mg
+Azithromycin,Levsafe Duo,Alkem,144.69,Antibiotic,500mg
+Theophylline,The-vas,Alkem,57.57,Allergy/Resp,400mg
+Augmentin,Augmox Duo 34,Sun Pharma,217.55,Antibiotic,625mg
+Salbutamol,Dolsafe XR 71,Ipca Labs,16.84,Allergy/Resp,4mg
+Diclofenac,Novpro SR,Aristo,21.73,Pain Relief,50mg
+Aspirin,Lipvac,Alembic,11.77,Pain Relief,75mg
+Ramipril,Ramcid Forte,Zydus Cadila,48.41,Cardiology,5mg
+Azithromycin,Azi-win Plus,Intas,104.85,Antibiotic,500mg
+Losartan,Telril Duo,Aristo,44.56,Cardiology,50mg
+Ramipril,San-ram Plus,Sanofi,71.57,Cardiology,5mg
+Clopidogrel,Cloplus DS,Sanofi,70.68,Cardiology,75mg
+Losartan,Zydwin Duo,Abbott,45.07,Cardiology,50mg
+Ramipril,Aztzen Forte,Pfizer,74.11,Cardiology,5mg
+Tramadol,Gsk-tra Plus,GSK,64.59,Pain Relief,50mg
+Amlodipine,Aml-cid DS,Glenmark,30.87,Cardiology,5mg
+Metformin,Metwin Forte,Intas,39.44,Diabetes,500mg
+Mefenamic Acid,Lup-mef Trio,Lupin,56.1,Pain Relief,500mg
+Fexofenadine,Int-fex XR,Intas,138.43,Allergy/Resp,120mg
+Rabeprazole,Losmox DS,Alkem,76.0,Gastrointestinal,20mg
+Doxycycline,Doxra Duo,Sun Pharma,26.44,Antibiotic,100mg
+Metoprolol,San-met,Sanofi,57.04,Cardiology,50mg
+Omeprazole,Ome-cet SR,Dr. Reddys,41.74,Gastrointestinal,20mg
+Clindamycin,Cli-vas DS,Lupin,153.7,Antibiotic,300mg
+Clonazepam,Cipcid Forte,Torrent,42.03,Neuro/Psych,0.5mg
+Ranitidine,Metnorm Plus,Intas,22.65,Gastrointestinal,150mg
+Losartan,Ari-los Trio,Aristo,48.4,Cardiology,50mg
+Amoxicillin,Amogly Duo,Sun Pharma,123.67,Antibiotic,500mg
+Telmisartan,Tel-vas Forte,Cipla,88.78,Cardiology,40mg
+Fexofenadine,Pfi-fex Plus,Pfizer,91.51,Allergy/Resp,120mg
+Clindamycin,Cli-dine XR,Micro Labs,132.81,Antibiotic,300mg
+Aspirin,Asp-cet Trio,Alkem,12.61,Pain Relief,75mg
+Metronidazole,Metzen Plus,Pfizer,17.71,Antibiotic,400mg
+Pioglitazone,Man-pio Trio,Mankind,56.49,Diabetes,15mg
+Alprazolam,Alpril,Torrent,44.84,Neuro/Psych,0.5mg
+Alprazolam,Alprox Forte 27,GSK,57.87,Neuro/Psych,0.5mg
+Rabeprazole,Rab-met Trio,Alkem,78.33,Gastrointestinal,20mg
+Clopidogrel,Clopax Trio,Mankind,80.35,Cardiology,75mg
+Fexofenadine,Fexoix Duo,Intas,88.95,Allergy/Resp,120mg
+Sertraline,Zyd-ser XR,Zydus Cadila,94.55,Neuro/Psych,50mg
+Sitagliptin,Ale-sit,Alembic,115.29,Diabetes,50mg
+Clindamycin,Cli-max DS,Lupin,144.63,Antibiotic,300mg
+Amoxicillin,Amoxox Forte,Micro Labs,90.34,Antibiotic,500mg
+Esomeprazole,Aztcare XR,Lupin,82.24,Gastrointestinal,40mg
+Vildagliptin,Vildix Plus,Mankind,122.01,Diabetes,50mg
+Ofloxacin,Ofloon Plus,Sun Pharma,51.53,Antibiotic,200mg
+Cetirizine,Cetplus Forte,USV,45.13,Allergy/Resp,10mg
+Atenolol,Ate-met Duo,Pfizer,26.81,Cardiology,50mg
+Dapagliflozin,Dapaox Trio,Pfizer,177.38,Diabetes,10mg
+Atorvastatin,Atodine Forte,Intas,64.78,Cardiology,10mg
+Metformin,Met-one Forte,USV,31.99,Diabetes,500mg
+Vitamin C,Fexcet DS,Alkem,30.32,Vitamins,500mg
+Linezolid,Ari-lin Duo,Aristo,305.55,Antibiotic,600mg
+Pantoprazole,Pantox XR,Torrent,88.25,Gastrointestinal,40mg
+Aceclofenac,Serone,Torrent,30.24,Pain Relief,100mg
+Amoxicillin,Man-amo SR,Mankind,88.23,Antibiotic,500mg
+Loperamide,Lopmol DS,Aristo,16.27,Gastrointestinal,2mg
+Aspirin,Asppro DS,Lupin,10.72,Pain Relief,75mg
+Naproxen,Napmol SR,Zydus Cadila,59.53,Pain Relief,500mg
+Fexofenadine,Fexfen,Pfizer,122.93,Allergy/Resp,120mg
+Pioglitazone,Piogax 33,Lupin,53.68,Diabetes,15mg
+Etoricoxib,Etorix SR,Pfizer,112.2,Pain Relief,90mg
+Glimepiride,Glione XR,Wockhardt,49.13,Diabetes,1mg
+Mefenamic Acid,Mef-ril,Intas,48.41,Pain Relief,500mg
+Etoricoxib,Eto-gly Plus,Intas,115.01,Pain Relief,90mg
+Cefpodoxime,Tenril DS,Aristo,131.13,Antibiotic,200mg
+Montelukast,Monmox Trio,GSK,81.7,Allergy/Resp,10mg
+Clindamycin,Rabfine Forte,Alkem,130.36,Antibiotic,300mg
+Clindamycin,Cli-vac XR,Dr. Reddys,136.12,Antibiotic,300mg
+Escitalopram,Escion Forte,Glenmark,96.5,Neuro/Psych,10mg
+Aceclofenac,Acevas,USV,42.22,Pain Relief,100mg
+Ofloxacin,Ale-ofl Duo,Alembic,50.45,Antibiotic,200mg
+Losartan,Los-win Plus,Intas,49.61,Cardiology,50mg
+Vitamin C,Vitaon Duo,Intas,26.93,Vitamins,500mg
+Esomeprazole,Esovas Plus,Mankind,93.67,Gastrointestinal,40mg
+Montelukast,Monvas Trio,Sun Pharma,91.97,Allergy/Resp,10mg
+Metronidazole,Metmox Plus,Wockhardt,16.9,Antibiotic,400mg
+Loperamide,Lopfen XR,Torrent,15.22,Gastrointestinal,2mg
+Montelukast,Mon-vas Forte,Aristo,73.8,Allergy/Resp,10mg
+Diclofenac,Dic-star XR,Dr. Reddys,23.8,Pain Relief,50mg
+Ibuprofen,Woc-ibu,Wockhardt,25.76,Pain Relief,400mg
+Azithromycin,Azi-star SR,Abbott,135.19,Antibiotic,500mg
+Enalapril,Enalox XR,GSK,29.64,Cardiology,5mg
+Augmentin,Dolvac Trio,Zydus Cadila,149.51,Antibiotic,625mg
+Mefenamic Acid,Mef-ra Duo,Mankind,51.02,Pain Relief,500mg
+Levofloxacin,Lev-cet Forte,Dr. Reddys,73.44,Antibiotic,500mg
+Metronidazole,Sun-met SR,Sun Pharma,25.66,Antibiotic,400mg
+Levocetirizine,Levpro DS,Pfizer,56.13,Allergy/Resp,5mg
+Domperidone,Dom-one SR,USV,30.93,Gastrointestinal,10mg
+Sitagliptin,Sit-zen XR,Aristo,135.27,Diabetes,50mg
+Linezolid,Linplus SR,USV,431.98,Antibiotic,600mg
+Domperidone,Dompex DS,GSK,28.03,Gastrointestinal,10mg
+Augmentin,Aug-mol Forte,Alkem,182.86,Antibiotic,625mg
+Salbutamol,Salpro SR,USV,16.91,Allergy/Resp,4mg
+Domperidone,Levvas,Cipla,27.46,Gastrointestinal,10mg
+Ramipril,Man-ram DS,Mankind,61.78,Cardiology,5mg
+Montelukast,Montox Plus 13,Mankind,90.0,Allergy/Resp,10mg
+Naproxen,Napron Plus,Intas,54.81,Pain Relief,500mg
+Montelukast,Monvac DS,Dr. Reddys,84.99,Allergy/Resp,10mg
+Alprazolam,Alpmol XR,USV,57.32,Neuro/Psych,0.5mg
+Enalapril,Enalix Trio,Dr. Reddys,29.03,Cardiology,5mg
+Piroxicam,Pirone,USV,50.53,Pain Relief,20mg
+Cefixime,Cef-fen XR,Alkem,119.24,Antibiotic,200mg
+Dapagliflozin,Dapstar Forte,Lupin,130.16,Diabetes,10mg
+Pantoprazole,Pantax DS,Micro Labs,90.41,Gastrointestinal,40mg
+Ranitidine,Raniix Duo,Micro Labs,20.54,Gastrointestinal,150mg
+Enalapril,Tor-ena DS,Torrent,42.56,Cardiology,5mg
+Fluoxetine,Flu-gly Duo,Alembic,73.73,Neuro/Psych,20mg
+Vildagliptin,Vilgly SR,Zydus Cadila,115.47,Diabetes,50mg
+Pregabalin,Prenac XR,Alkem,132.19,Neuro/Psych,75mg
+Montelukast,Aztmet Forte,Sun Pharma,68.48,Allergy/Resp,10mg
+Glimepiride,Glicid XR,Sanofi,40.11,Diabetes,1mg
+Amikacin,Amikon DS 93,Wockhardt,96.03,Antibiotic,500mg
+Domperidone,Metzen SR,Ipca Labs,26.75,Gastrointestinal,10mg
+Fluoxetine,Flucare Plus,USV,49.43,Neuro/Psych,20mg
+Sertraline,Sertix Duo 87,Sanofi,77.03,Neuro/Psych,50mg
+Glimepiride,Abb-gli Trio,Abbott,36.66,Diabetes,1mg
+Salbutamol,Salbox Duo,Sun Pharma,12.14,Allergy/Resp,4mg
+Aspirin,Aspnorm Duo,Cipla,8.96,Pain Relief,75mg
+Dapagliflozin,Dap-fen DS,Torrent,161.41,Diabetes,10mg
+Metformin,Metfon Trio,Abbott,40.33,Diabetes,500mg
+Augmentin,Augcid SR,Lupin,222.96,Antibiotic,625mg
+Domperidone,Dompro DS,Sun Pharma,32.85,Gastrointestinal,10mg
+Sitagliptin,Sun-sit Trio,Sun Pharma,106.94,Diabetes,50mg
+Alprazolam,Alpron Forte,Aristo,55.49,Neuro/Psych,0.5mg
+Clindamycin,Abb-cli Trio,Abbott,120.13,Antibiotic,300mg
+Vitamin C,Vitcet Trio,Sanofi,26.38,Vitamins,500mg
+Aspirin,Aspion Duo,Glenmark,12.72,Pain Relief,75mg
+Cetirizine,Cetmox XR 21,Ipca Labs,39.9,Allergy/Resp,10mg
+Doxycycline,Doxyix DS,Lupin,27.76,Antibiotic,100mg
+Rosuvastatin,Rosuex Plus,Wockhardt,135.2,Cardiology,10mg
+Atenolol,Atecet Plus,Sun Pharma,27.34,Cardiology,50mg
+Salbutamol,Sal-cid Forte,Glenmark,12.94,Allergy/Resp,4mg
+Salbutamol,Lup-sal,Lupin,13.98,Allergy/Resp,4mg
+Escitalopram,Escsafe Trio,Abbott,79.23,Neuro/Psych,10mg
+Montelukast,Moncip Plus,Alkem,79.22,Allergy/Resp,10mg
+Gliclazide,Glicon XR,Glenmark,54.62,Diabetes,80mg
+Rosuvastatin,Rosfine Duo,Pfizer,148.43,Cardiology,10mg
+Vildagliptin,Cip-vil Trio,Cipla,108.58,Diabetes,50mg
+Ramipril,Ramone,USV,62.94,Cardiology,5mg
+Naproxen,Napcid XR,Micro Labs,58.17,Pain Relief,500mg
+Loperamide,Ipc-lop Plus,Ipca Labs,12.84,Gastrointestinal,2mg
+Ondansetron,Ondaex DS,Aristo,51.83,Gastrointestinal,4mg
+Losartan,Novfen DS,Abbott,48.77,Cardiology,50mg
+Gabapentin,Gab-win SR,Sanofi,86.23,Neuro/Psych,300mg
+Clonazepam,Lup-clo XR,Lupin,49.54,Neuro/Psych,0.5mg
+Cetirizine,Cetstar XR,Micro Labs,36.11,Allergy/Resp,10mg
+Etoricoxib,Etoron Duo,Aristo,86.79,Pain Relief,90mg
+Paracetamol,Moxfine Forte,Lupin,26.57,Pain Relief,650mg
+Metformin,Metstar SR,GSK,29.49,Diabetes,500mg
+Piroxicam,Piroax Duo,Intas,49.85,Pain Relief,20mg
+Augmentin,Zyd-aug SR,Zydus Cadila,147.21,Antibiotic,625mg
+Escitalopram,Cipvac,GSK,86.2,Neuro/Psych,10mg
+Aspirin,Gsk-asp Plus,GSK,10.01,Pain Relief,75mg
+Aspirin,Aspwin,GSK,9.48,Pain Relief,75mg
+Paracetamol,Int-par,Intas,25.01,Pain Relief,650mg
+Metformin,Man-met 81,Mankind,33.4,Diabetes,500mg
+Pioglitazone,Sun-pio XR,Sun Pharma,56.63,Diabetes,15mg
+Metformin,Woc-met SR 40,Wockhardt,39.7,Diabetes,500mg
+Enalapril,Ipc-ena XR,Ipca Labs,45.17,Cardiology,5mg
+Paracetamol,Clomol XR,Intas,26.56,Pain Relief,650mg
+Losartan,Los-max DS,Glenmark,47.97,Cardiology,50mg
+Rosuvastatin,Rosuix DS,Sanofi,124.31,Cardiology,10mg
+Fluoxetine,Fluoix Duo,Wockhardt,54.92,Neuro/Psych,20mg
+Pregabalin,Pregon DS,Pfizer,113.01,Neuro/Psych,75mg
+Esomeprazole,Esosafe Trio,Zydus Cadila,119.81,Gastrointestinal,40mg
+Tramadol,Tracare SR,Lupin,77.78,Pain Relief,50mg
+Glimepiride,Gli-vas Forte,Dr. Reddys,36.27,Diabetes,1mg
+Etoricoxib,Man-eto Duo,Mankind,111.88,Pain Relief,90mg
+Diclofenac,Dr.-dic Duo,Dr. Reddys,20.89,Pain Relief,50mg
+Domperidone,Novvas SR,USV,25.04,Gastrointestinal,10mg
+Levofloxacin,Lev-safe Forte,GSK,76.4,Antibiotic,500mg
+Azithromycin,Azivas Forte,Wockhardt,140.2,Antibiotic,500mg
+Pregabalin,Pre-plus Plus,Glenmark,106.61,Neuro/Psych,75mg
+Tramadol,Tracid Duo,Cipla,73.42,Pain Relief,50mg
+Esomeprazole,Esotaz Trio,Zydus Cadila,101.5,Gastrointestinal,40mg
+Cefpodoxime,Cefpex,Cipla,179.58,Antibiotic,200mg
+Doxycycline,Doxyox DS,Alembic,36.18,Antibiotic,100mg
+Azithromycin,Azi-fine Trio,Micro Labs,138.71,Antibiotic,500mg
+Loperamide,Lopeon SR,Alembic,18.47,Gastrointestinal,2mg
+Metformin,Woc-met DS,Wockhardt,28.43,Diabetes,500mg
+Aceclofenac,Acecox,Alembic,44.89,Pain Relief,100mg
+Atorvastatin,Ale-ato Trio,Alembic,98.66,Cardiology,10mg
+Etoricoxib,Etorax Plus,Sanofi,79.74,Pain Relief,90mg
+Atenolol,Ate-fen,Abbott,22.21,Cardiology,50mg
+Atorvastatin,Rabmol Trio,Sanofi,87.96,Cardiology,10mg
+Omeprazole,Omefine Duo,Zydus Cadila,60.9,Gastrointestinal,20mg
+Clonazepam,Lup-clo Forte,Lupin,56.52,Neuro/Psych,0.5mg
+Telmisartan,Telpan Plus 44,Pfizer,100.02,Cardiology,40mg
+Atorvastatin,Ato-win Trio,GSK,70.89,Cardiology,10mg

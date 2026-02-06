@@ -1,68 +1,79 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --primary: #0ea5e9;
+  --secondary: #2dd4bf;
+  --bg-gradient: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  --card-bg: #ffffff;
+  --text-main: #1e293b;
+  --text-muted: #64748b;
+  --input-bg: #f8fafc;
+  --border: #e2e8f0;
+  --shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.1);
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+[data-theme='dark'] {
+  --bg-gradient: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  --card-bg: #1e293b; 
+  --text-main: #ffffff !important;
+  --text-muted: #e2e8f0 !important;
+  --primary: #38bdf8;
+  --secondary: #2dd4bf;
+  --input-bg: #334155;
+  --border: rgba(255, 255, 255, 0.2);
+  --shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  background: var(--bg-gradient);
+  color: var(--text-main);
+  font-family: 'Inter', sans-serif;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+/* Modern Card Style */
+.modern-card {
+  background: var(--card-bg);
+  border-radius: 24px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
+/* Animation for pages entering */
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.animate-entry {
+  animation: slideIn 0.5s ease-out forwards;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+/* Form Controls */
+.form-control {
+  background-color: var(--input-bg) !important;
+  border: 1px solid var(--border) !important;
+  color: var(--text-main) !important;
+  padding: 12px 15px;
+  border-radius: 12px;
+}
+.form-control:focus {
+  box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.2);
+  border-color: var(--primary) !important;
+}
+
+/* Custom Button */
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary), #0284c7);
+  border: none;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.btn-google {
+  background: var(--input-bg);
+  border: 1px solid var(--border);
+  color: var(--text-main);
+  border-radius: 12px;
+}
+.btn-google:hover {
+  background: var(--border);
 }

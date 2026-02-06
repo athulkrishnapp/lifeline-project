@@ -1,0 +1,101 @@
+reg_id,full_name,shop_name,email
+PH-REG-101,Arun Pharma,City Meds,arun.pharma@lifeline.com
+PH-REG-102,Deepa Meds,Apollo Pharmacy,deepa.meds@lifeline.com
+PH-REG-103,Rahul Chemist,Wellness Forever,rahul.c@lifeline.com
+PH-REG-104,Sneha Drugs,MedPlus,sneha.d@lifeline.com
+PH-REG-105,Amit Pharmacy,Netmeds,amit.p@lifeline.com
+PH-REG-106,Priya Healthcare,PharmEasy,priya.h@lifeline.com
+PH-REG-107,Vikram Medicos,1mg,vikram.m@lifeline.com
+PH-REG-108,Anjali Medicals,Frank Ross,anjali.m@lifeline.com
+PH-REG-109,Rohan Drugs,Sanjivani,rohan.d@lifeline.com
+PH-REG-110,Kavya Pharma,Noble Plus,kavya.p@lifeline.com
+PH-REG-111,Sameer Chemists,Guardian Pharmacy,sameer.c@lifeline.com
+PH-REG-112,Pooja Medicos,Health & Glow,pooja.m@lifeline.com
+PH-REG-113,Aditya Pharmacy,Lifecare,aditya.p@lifeline.com
+PH-REG-114,Neha Drugs,Tulsi Pharmacy,neha.d@lifeline.com
+PH-REG-115,Varun Medicals,Religare Wellness,varun.m@lifeline.com
+PH-REG-116,Ishita Pharma,Himalaya Drug Co,ishita.p@lifeline.com
+PH-REG-117,Karan Chemist,Emami Frank Ross,karan.c@lifeline.com
+PH-REG-118,Simran Meds,Planet Health,simran.m@lifeline.com
+PH-REG-119,Rajesh Pharmacy,Generico,rajesh.p@lifeline.com
+PH-REG-120,Meera Drugs,Dava India,meera.d@lifeline.com
+PH-REG-121,Suresh Medicals,Jan Aushadhi,suresh.m@lifeline.com
+PH-REG-122,Anita Pharma,Zeno Health,anita.p@lifeline.com
+PH-REG-123,Manish Chemists,Care Pharmacy,manish.c@lifeline.com
+PH-REG-124,Sunita Medicos,Good Health,sunita.m@lifeline.com
+PH-REG-125,Vikas Pharmacy,City Health,vikas.p@lifeline.com
+PH-REG-126,Rina Drugs,Metro Meds,rina.d@lifeline.com
+PH-REG-127,Alok Medicals,Urban Pharmacy,alok.m@lifeline.com
+PH-REG-128,Geeta Pharma,Village Chemist,geeta.p@lifeline.com
+PH-REG-129,Harsh Chemists,Town Meds,harsh.c@lifeline.com
+PH-REG-130,Nisha Medicos,Central Pharmacy,nisha.m@lifeline.com
+PH-REG-131,Rakesh Pharmacy,Global Meds,rakesh.p@lifeline.com
+PH-REG-132,Soma Drugs,Local Chemist,soma.d@lifeline.com
+PH-REG-133,Vinod Medicals,Community Pharma,vinod.m@lifeline.com
+PH-REG-134,Rekha Pharma,Family Meds,rekha.p@lifeline.com
+PH-REG-135,Ashok Chemists,Corner Pharmacy,ashok.c@lifeline.com
+PH-REG-136,Kiran Medicos,Express Meds,kiran.m@lifeline.com
+PH-REG-137,Sanjay Pharmacy,Quick Pharma,sanjay.p@lifeline.com
+PH-REG-138,Mona Drugs,Discount Meds,mona.d@lifeline.com
+PH-REG-139,Pradeep Medicals,Prime Health,pradeep.m@lifeline.com
+PH-REG-140,Lata Pharma,Choice Pharmacy,lata.p@lifeline.com
+PH-REG-141,Mohit Chemists,Value Meds,mohit.c@lifeline.com
+PH-REG-142,Swati Medicos,Trust Pharmacy,swati.m@lifeline.com
+PH-REG-143,Naveen Pharmacy,Best Care,naveen.p@lifeline.com
+PH-REG-144,Bina Drugs,Safe Meds,bina.d@lifeline.com
+PH-REG-145,Tarun Medicals,Daily Dose,tarun.m@lifeline.com
+PH-REG-146,Usha Pharma,Healthy Life,usha.p@lifeline.com
+PH-REG-147,Deepak Chemists,Wellness Point,deepak.c@lifeline.com
+PH-REG-148,Vani Medicos,MediCare,vani.m@lifeline.com
+PH-REG-149,Gopal Pharmacy,Pharma Plus,gopal.p@lifeline.com
+PH-REG-150,Jaya Drugs,Drug Mart,jaya.d@lifeline.com
+PH-REG-151,Kamal Medicals,MediWorld,kamal.m@lifeline.com
+PH-REG-152,Rita Pharma,Pharma Zone,rita.p@lifeline.com
+PH-REG-153,Anil Chemists,Chemists Corner,anil.c@lifeline.com
+PH-REG-154,Seema Medicos,Medicos Hub,seema.m@lifeline.com
+PH-REG-155,Ravi Pharmacy,Pharmacy Express,ravi.p@lifeline.com
+PH-REG-156,Tina Drugs,Drug Store,tina.d@lifeline.com
+PH-REG-157,Manoj Medicals,Medical Center,manoj.m@lifeline.com
+PH-REG-158,Sarita Pharma,Pharma House,sarita.p@lifeline.com
+PH-REG-159,Ajay Chemists,The Chemist,ajay.c@lifeline.com
+PH-REG-160,Divya Medicos,Medicos Point,divya.m@lifeline.com
+PH-REG-161,Vijay Pharmacy,Pharmacy World,vijay.p@lifeline.com
+PH-REG-162,Esha Drugs,Drug Palace,esha.d@lifeline.com
+PH-REG-163,Prakash Medicals,Medical Hall,prakash.m@lifeline.com
+PH-REG-164,Uma Pharma,Pharma City,uma.p@lifeline.com
+PH-REG-165,Nitin Chemists,Chemists Shop,nitin.c@lifeline.com
+PH-REG-166,Renu Medicos,Medicos Plaza,renu.m@lifeline.com
+PH-REG-167,Sachin Pharmacy,Pharmacy Mart,sachin.p@lifeline.com
+PH-REG-168,Anu Drugs,Drug Corner,anu.d@lifeline.com
+PH-REG-169,Mukesh Medicals,Medical Store,mukesh.m@lifeline.com
+PH-REG-170,Juhi Pharma,Pharma Care,juhi.p@lifeline.com
+PH-REG-171,Yash Chemists,Chemists World,yash.c@lifeline.com
+PH-REG-172,Preeti Medicos,Medicos Zone,preeti.m@lifeline.com
+PH-REG-173,Om Pharmacy,Pharmacy Hub,om.p@lifeline.com
+PH-REG-174,Hema Drugs,Drug World,hema.d@lifeline.com
+PH-REG-175,Jai Medicals,Medical Mart,jai.m@lifeline.com
+PH-REG-176,Suman Pharma,Pharma Point,suman.p@lifeline.com
+PH-REG-177,Lalit Chemists,Chemists Mart,lalit.c@lifeline.com
+PH-REG-178,Kiran Medicos,Medicos House,kiran.m2@lifeline.com
+PH-REG-179,Sonu Pharmacy,Pharmacy Plaza,sonu.p@lifeline.com
+PH-REG-180,Rani Drugs,Drug Hub,rani.d@lifeline.com
+PH-REG-181,Dev Medicals,Medical Plaza,dev.m@lifeline.com
+PH-REG-182,Indu Pharma,Pharma Mart,indu.p@lifeline.com
+PH-REG-183,Raj Chemists,Chemists Point,raj.c@lifeline.com
+PH-REG-184,Minu Medicos,Medicos World,minu.m@lifeline.com
+PH-REG-185,Gaurav Pharmacy,Pharmacy Store,gaurav.p@lifeline.com
+PH-REG-186,Arti Drugs,Drug Point,arti.d@lifeline.com
+PH-REG-187,Vipin Medicals,Medical World,vipin.m@lifeline.com
+PH-REG-188,Shilpa Pharma,Pharma Shop,shilpa.p@lifeline.com
+PH-REG-189,Suraj Chemists,Chemists Store,suraj.c@lifeline.com
+PH-REG-190,Tara Medicos,Medicos Shop,tara.m@lifeline.com
+PH-REG-191,Arvind Pharmacy,Pharmacy House,arvind.p@lifeline.com
+PH-REG-192,Bela Drugs,Drug Shop,bela.d@lifeline.com
+PH-REG-193,Chandan Medicals,Medical Shop,chandan.m@lifeline.com
+PH-REG-194,Dolly Pharma,Pharma Corner,dolly.p@lifeline.com
+PH-REG-195,Hari Chemists,Chemists House,hari.c@lifeline.com
+PH-REG-196,Ila Medicos,Medicos Corner,ila.m@lifeline.com
+PH-REG-197,Jatin Pharmacy,Pharmacy Corner,jatin.p@lifeline.com
+PH-REG-198,Komal Drugs,Drug House,komal.d@lifeline.com
+PH-REG-199,Lucky Medicals,Medical Corner,lucky.m@lifeline.com
+PH-REG-200,Maya Pharma,Pharma World,maya.p@lifeline.com
