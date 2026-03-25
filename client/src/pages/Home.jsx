@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 import { 
   FaHeartbeat, FaUserMd, FaShieldAlt, FaBrain, FaGlobe, 
   FaPrescriptionBottleAlt, FaArrowRight, FaCheckCircle, FaHospital,
@@ -8,10 +9,57 @@ import {
 
 function Home() {
   const [isVisible, setIsVisible] = useState(false);
-
+  
+  // New States for Authentication & User Data
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [userProfile, setUserProfile] = useState(null);
+  const [dashboardRoute, setDashboardRoute] = useState('/patient-dashboard');
   useEffect(() => {
     setIsVisible(true);
+    
+    // 1. Check if user is logged in
+    const token = localStorage.getItem('token');
+    if (token) {
+        setIsLoggedIn(true);
+        
+        // 2. Set correct dashboard route based on user role
+        try {
+            const role = localStorage.getItem('role');
+
+            if (role === 'doctor') {
+                setDashboardRoute('/doctor-dashboard');
+            }
+            else if (role === 'pharmacist') {
+                setDashboardRoute('/pharmacist-dashboard');
+            }
+            else if (role === 'admin') {
+                setDashboardRoute('/admin-dashboard');
+            }
+            else {
+                setDashboardRoute('/patient-dashboard');
+            }
+        } catch (e) {
+            setDashboardRoute('/dashboard');
+        }
+
+        // 3. Fetch their profile data to show in the mock card
+        axios.get('http://localhost:5000/api/profile', { 
+            headers: { Authorization: `Bearer ${token}` } 
+        })
+        .then(res => {
+            setUserProfile(res.data);
+        })
+        .catch(err => console.error("Could not fetch profile for home screen", err));
+    }
   }, []);
+
+  // Helper function to get initials for the circle avatar
+  const getInitials = (name) => {
+      if (!name) return 'WW';
+      const parts = name.split(' ');
+      if (parts.length > 1) return (parts[0][0] + parts[1][0]).toUpperCase();
+      return name.substring(0, 2).toUpperCase();
+  };
 
   return (
     <div className="page-background transition-bg overflow-hidden d-flex flex-column" style={{minHeight: '100vh'}}>
@@ -39,13 +87,23 @@ function Home() {
                 <p className="lead theme-text-muted mb-5" style={{ maxWidth: '90%' }}>
                   A unified, blockchain-secured ecosystem connecting 1.4 Billion citizens with doctors, pharmacists, and AI diagnostics in real-time.
                 </p>
+                
+                {/* DYNAMIC BUTTONS: Show Dashboard link if logged in, else Login/Register */}
                 <div className="d-flex gap-3">
-                  <Link to="/register" className="btn btn-primary btn-lg rounded-0 px-5 py-3 fw-bold shadow-lg lift-on-hover">
-                    GET STARTED
-                  </Link>
-                  <Link to="/login" className="btn btn-outline-dark theme-btn-outline btn-lg rounded-0 px-5 py-3 fw-bold lift-on-hover">
-                    LOGIN
-                  </Link>
+                  {isLoggedIn ? (
+                      <Link to={dashboardRoute} className="btn btn-primary btn-lg rounded-0 px-5 py-3 fw-bold shadow-lg lift-on-hover">
+                        GO TO DASHBOARD <FaArrowRight className="ms-2"/>
+                      </Link>
+                  ) : (
+                      <>
+                          <Link to="/register" className="btn btn-primary btn-lg rounded-0 px-5 py-3 fw-bold shadow-lg lift-on-hover">
+                            GET STARTED
+                          </Link>
+                          <Link to="/login" className="btn btn-outline-dark theme-btn-outline btn-lg rounded-0 px-5 py-3 fw-bold lift-on-hover">
+                            LOGIN
+                          </Link>
+                      </>
+                  )}
                 </div>
                 
                 <div className="mt-5 d-flex align-items-center gap-4 theme-text-muted small fw-bold">
@@ -77,16 +135,27 @@ function Home() {
                     </div>
                     <div className="p-4">
                         <div className="d-flex align-items-center gap-3 mb-4">
-                            <div className="width-50 height-50 rounded-circle bg-light d-flex align-items-center justify-content-center text-primary fw-bold fs-4">AK</div>
+                            <div className="width-50 height-50 rounded-circle bg-light d-flex align-items-center justify-content-center text-primary fw-bold fs-4">
+                                {/* Dynamic Initials */}
+                                {isLoggedIn && userProfile ? getInitials(userProfile.full_name) : 'WW'}
+                            </div>
                             <div>
-                                <h5 className="fw-bold m-0 theme-text-inner">Athulkrishna P P</h5>
-                                <small className="text-muted">ID: LL-P-2026-1922</small>
+                                {/* Dynamic Name and ID (Walter White fallback) */}
+                                <h5 className="fw-bold m-0 theme-text-inner">
+                                    {isLoggedIn && userProfile ? userProfile.full_name : 'Walter White'}
+                                </h5>
+                                <small className="text-muted">
+                                    ID: {isLoggedIn && userProfile ? userProfile.unique_lifeline_id : 'LL-P-2026-0932'}
+                                </small>
                             </div>
                         </div>
                         <div className="row g-2">
                             <div className="col-4">
                                 <div className="p-3 bg-light rounded-2 text-center border dark-box">
-                                    <div className="fw-bold text-primary">A+</div>
+                                    {/* Dynamic Blood Group */}
+                                    <div className="fw-bold text-primary">
+                                        {isLoggedIn && userProfile?.blood_group ? userProfile.blood_group : 'O+'}
+                                    </div>
                                     <div className="tiny text-muted">Blood</div>
                                 </div>
                             </div>
@@ -281,7 +350,7 @@ function Home() {
               
               <div className="border-top theme-border pt-4 d-flex justify-content-between align-items-center flex-column flex-md-row">
                   <small className="theme-text-muted mb-2 mb-md-0">
-                      &copy; 2026 Lifeline Project. <strong>Athulkrishna P P</strong>. All Rights Reserved.
+                      &copy; {new Date().getFullYear()} Lifeline Project. All Rights Reserved.
                   </small>
                   <div className="d-flex gap-4 small theme-text-muted">
                       <span>Privacy Policy</span>

@@ -3,6 +3,10 @@ import axios from 'axios';
 import { useNavigate, Link } from 'react-router-dom';
 import { FaShieldAlt, FaSpinner, FaGoogle, FaArrowLeft } from 'react-icons/fa';
 
+// Firebase Imports
+import { signInWithPopup } from 'firebase/auth';
+import { auth, provider } from '../firebase'; 
+
 function Login() {
   const navigate = useNavigate();
   const [role, setRole] = useState('patient'); 
@@ -23,19 +27,38 @@ function Login() {
     navigate(data.user.role === 'doctor' ? '/doctor-dashboard' : (data.user.role === 'patient' ? '/patient-dashboard' : '/pharmacist-dashboard'));
   };
 
+  // UPDATED: Real Google Sign-In using Firebase
   const handleGoogleLogin = async () => {
-    const googleEmail = prompt("DEMO: Enter Google Email:");
-    if (!googleEmail) return;
-    setLoading(true); setError('');
     try {
+        setLoading(true); 
+        setError('');
+        
+        // 1. Trigger the real Firebase Google Sign-In popup
+        const result = await signInWithPopup(auth, provider);
+        const googleEmail = result.user.email; // Extract the verified email from Google
+
+        // 2. Send the verified email to your Node.js backend
         const res = await axios.post('http://localhost:5000/api/google-login', { email: googleEmail });
         loginSuccess(res.data);
+
     } catch (err) {
+        // Handle backend account not found
         if (err.response && (err.response.status === 403 || err.response.status === 404)) {
             alert("Account not found! Redirecting to Registration...");
             navigate('/register');
-        } else setError("Google Login Failed.");
-    } finally { setLoading(false); }
+        } 
+        // Handle user closing the Google popup manually
+        else if (err.code === 'auth/popup-closed-by-user') {
+            setError("Google sign-in was cancelled.");
+        } 
+        // Catch-all error
+        else {
+            console.error("Google Auth Error:", err);
+            setError("Google Login Failed.");
+        }
+    } finally { 
+        setLoading(false); 
+    }
   };
 
   const handleSendLoginOTP = async (e) => {
@@ -77,7 +100,7 @@ function Login() {
             <div className="row justify-content-center">
                 <div className="col-lg-5 col-md-8">
                     
-                    {/* HEADER - TEXT REMOVED */}
+                    {/* HEADER */}
                     <div className="text-center mb-4">
                         <div className="d-flex justify-content-center align-items-center gap-2 mb-3 opacity-75">
                             <FaShieldAlt className="theme-icon"/> <span className="small fw-bold theme-text-muted" style={{letterSpacing: '3px'}}>SECURE ACCESS</span>

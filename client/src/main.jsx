@@ -6,10 +6,7 @@ import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    {/* The Router must wrap the entire App */}
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  </React.StrictMode>,
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
 );

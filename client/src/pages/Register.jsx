@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 import { useNavigate, Link } from 'react-router-dom';
-import { FaCheckCircle, FaSpinner, FaShieldAlt, FaInfoCircle, FaClock, FaRedo } from 'react-icons/fa';
+import { FaCheckCircle, FaSpinner, FaShieldAlt, FaClock, FaRedo, FaUserMd, FaPrescriptionBottleAlt } from 'react-icons/fa';
 
 function Register() {
   const navigate = useNavigate();
 
-  // --- DEMO DATA ---
+  // --- DEMO DATA FOR PATIENTS ---
   const [demoIdentity] = useState(() => {
     const options = [
         { uid: "123456789012", dob: "2002-05-15" },
@@ -17,6 +17,13 @@ function Register() {
   });
 
   const [role, setRole] = useState('patient');
+  
+  // Professional Flow State (1 = Verify ID/DOB, 2 = Fill Details)
+  const [profStep, setProfStep] = useState(1);
+  
+  // Dynamic Unused Professional Demo State
+  const [profDemo, setProfDemo] = useState({ id: 'Loading...', dob: 'Loading...' });
+
   const [formData, setFormData] = useState({ 
     aadhaar: '', dob: '', 
     full_name: '', email: '', phone: '', 
@@ -24,21 +31,31 @@ function Register() {
     license_id: '', workplace: '' 
   });
   
-  // OTP States
+  // OTP States (Patient)
   const [otpSent, setOtpSent] = useState(false);
-  const [otpValues, setOtpValues] = useState(["", "", "", ""]); // 4 Digits
+  const [otpValues, setOtpValues] = useState(["", "", "", ""]); 
+  const [demoOtpValue, setDemoOtpValue] = useState(""); // Holds random OTP from backend
   const [timer, setTimer] = useState(30);
   const [canResend, setCanResend] = useState(false);
   
-  const [isVerified, setIsVerified] = useState(false);
+  const [isVerified, setIsVerified] = useState(false); // For Patient Identity
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [generatedID, setGeneratedID] = useState(null);
 
-  // Refs for OTP inputs to manage focus
   const inputRefs = [useRef(), useRef(), useRef(), useRef()];
 
   const handleChange = (e) => setFormData({ ...formData, [e.target.name]: e.target.value });
+
+  // Fetch unused professional demo credentials when role changes
+  useEffect(() => {
+      if (role === 'doctor' || role === 'pharmacist') {
+          setProfDemo({ id: 'Loading...', dob: 'Loading...' });
+          axios.get(`http://localhost:5000/api/demo-credentials/${role}`)
+              .then(res => setProfDemo(res.data))
+              .catch(err => setProfDemo({ id: 'Error', dob: 'Error' }));
+      }
+  }, [role, profStep]); // Re-fetch if they switch roles or finish registering someone
 
   // --- TIMER LOGIC ---
   useEffect(() => {
@@ -51,37 +68,34 @@ function Register() {
     return () => clearInterval(interval);
   }, [otpSent, timer]);
 
-  // --- OTP INPUT HANDLERS ---
+  // --- OTP HANDLERS ---
   const handleOtpChange = (element, index) => {
     if (isNaN(element.value)) return;
     const newOtp = [...otpValues];
     newOtp[index] = element.value;
     setOtpValues(newOtp);
-
-    // Auto-focus next input
     if (element.value && index < 3) {
         inputRefs[index + 1].current.focus();
     }
   };
 
   const handleKeyDown = (e, index) => {
-    // Auto-focus previous input on Backspace
     if (e.key === "Backspace" && !otpValues[index] && index > 0) {
         inputRefs[index - 1].current.focus();
     }
   };
 
-  // --- ACTIONS ---
-
+  // --- PATIENT ACTIONS ---
   const handleSendOTP = async () => {
     if (formData.aadhaar.length !== 12) return setError("Enter valid 12-digit Aadhaar");
     setLoading(true); setError('');
     try {
-        await axios.post('http://localhost:5000/api/send-otp', { aadhaar: formData.aadhaar, dob: formData.dob });
+        const res = await axios.post('http://localhost:5000/api/send-otp', { aadhaar: formData.aadhaar, dob: formData.dob });
         setOtpSent(true);
         setTimer(30);
         setCanResend(false);
         setOtpValues(["", "", "", ""]);
+        setDemoOtpValue(res.data.otp_hint); // Capture random OTP from backend
     } catch (err) { setError(err.response?.data?.error || "Check Aadhaar/DOB"); } 
     finally { setLoading(false); }
   };
@@ -99,6 +113,35 @@ function Register() {
     finally { setLoading(false); }
   };
 
+  // --- PROFESSIONAL ACTIONS ---
+  const verifyProfessional = async () => {
+    if(!formData.license_id || !formData.dob) return setError("Please enter ID and Date of Birth.");
+    setLoading(true); setError('');
+    
+    try {
+        const res = await axios.post('http://localhost:5000/api/verify-professional', {
+            role: role,
+            identifier: formData.license_id,
+            dob: formData.dob
+        });
+
+        setFormData(prev => ({
+            ...prev,
+            full_name: res.data.data.full_name,
+            email: res.data.data.email,
+            workplace: res.data.data.workplace
+        }));
+        
+        setProfStep(2);
+
+    } catch (err) {
+        setError(err.response?.data?.error || "Verification Failed. Check ID and DOB.");
+    } finally {
+        setLoading(false);
+    }
+  };
+
+  // --- FINAL REGISTRATION ---
   const handleRegister = async (e) => {
     e.preventDefault(); setError('');
     if (role !== 'patient' && formData.password !== formData.confirm_password) return setError("Passwords do not match");
@@ -108,6 +151,16 @@ function Register() {
         setGeneratedID(res.data.unique_id);
     } catch (err) { setError(err.response?.data?.error || "Registration Failed"); } 
     finally { setLoading(false); }
+  };
+
+  // --- RESET HANDLER ---
+  const handleRoleSwitch = (r) => {
+    setRole(r);
+    setFormData({ aadhaar: '', dob: '', full_name: '', email: '', phone: '', password: '', confirm_password: '', license_id: '', workplace: '' });
+    setIsVerified(false);
+    setError('');
+    setOtpSent(false);
+    setProfStep(1); 
   };
 
   if (generatedID) {
@@ -136,14 +189,13 @@ function Register() {
                     <div className="d-flex justify-content-center align-items-center gap-2 mb-3 opacity-75">
                         <FaShieldAlt className="theme-icon"/> <span className="small fw-bold theme-text-muted" style={{letterSpacing: '3px'}}>SECURE GATEWAY</span>
                     </div>
-                    {/* Header Text Removed as requested earlier? Added back for context, remove if strict "nothing there" still applies */}
                     <h2 className="fw-bold theme-text display-6">Create Account</h2>
                 </div>
 
                 <div className="register-card p-5 shadow-2xl rounded-0">
                     <div className="d-flex border-bottom mb-4 role-tabs">
                         {['patient', 'doctor', 'pharmacist'].map(r => (
-                            <button key={r} onClick={() => { setRole(r); setFormData({ ...formData, full_name: '', email: '' }); setIsVerified(false); setError(''); }}
+                            <button key={r} onClick={() => handleRoleSwitch(r)}
                                 className={`flex-fill btn rounded-0 py-3 fw-bold text-uppercase transition-colors ${role === r ? 'active-tab' : 'inactive-tab'}`}
                                 style={{fontSize: '11px', letterSpacing: '1px'}}>
                                 {r}
@@ -155,7 +207,7 @@ function Register() {
 
                     <form onSubmit={handleRegister}>
                         
-                        {/* PATIENT FLOW */}
+                        {/* ================= PATIENT FLOW ================= */}
                         {role === 'patient' && (
                             <>
                                 {!isVerified ? (
@@ -163,15 +215,14 @@ function Register() {
                                         <div className="row">
                                             <div className="col-12 mb-3">
                                                 <label className="small fw-bold theme-text-muted mb-1">AADHAAR NUMBER</label>
-                                                <input name="aadhaar" className="form-control rounded-0 p-3 custom-input" placeholder="12-Digit UID" onChange={handleChange} maxLength="12"/>
+                                                <input name="aadhaar" className="form-control rounded-0 p-3 custom-input" placeholder="12-Digit UID" onChange={handleChange} maxLength="12" value={formData.aadhaar}/>
                                             </div>
                                             <div className="col-12 mb-2">
                                                 <label className="small fw-bold theme-text-muted mb-1">DATE OF BIRTH</label>
-                                                <input name="dob" type="date" className="form-control rounded-0 p-3 custom-input" onChange={handleChange}/>
+                                                <input name="dob" type="date" className="form-control rounded-0 p-3 custom-input" onChange={handleChange} value={formData.dob}/>
                                             </div>
                                         </div>
 
-                                        {/* Demo Hint */}
                                         <div className="mb-4 text-start">
                                             <small className="theme-text-muted" style={{fontSize: '11px', opacity: 0.7}}>
                                                 Demo: <span className="fw-bold">{demoIdentity.uid}</span> &bull; <span className="fw-bold">{demoIdentity.dob}</span>
@@ -185,43 +236,24 @@ function Register() {
                                         ) : (
                                             <div className="otp-container fade-in">
                                                 <label className="small fw-bold theme-text mb-3 d-block">ENTER 4-DIGIT CODE</label>
-                                                
-                                                {/* 4-Digit Input + Timer */}
                                                 <div className="d-flex align-items-center justify-content-between mb-4">
                                                     <div className="d-flex gap-2">
                                                         {otpValues.map((digit, index) => (
-                                                            <input
-                                                                key={index}
-                                                                ref={inputRefs[index]}
-                                                                type="text"
-                                                                maxLength="1"
-                                                                className="form-control rounded-0 text-center fw-bold fs-4 otp-box-input"
-                                                                style={{ width: '50px', height: '50px' }}
-                                                                value={digit}
-                                                                onChange={(e) => handleOtpChange(e.target, index)}
-                                                                onKeyDown={(e) => handleKeyDown(e, index)}
-                                                            />
+                                                            <input key={index} ref={inputRefs[index]} type="text" maxLength="1" className="form-control rounded-0 text-center fw-bold fs-4 otp-box-input" style={{ width: '50px', height: '50px' }} value={digit} onChange={(e) => handleOtpChange(e.target, index)} onKeyDown={(e) => handleKeyDown(e, index)} />
                                                         ))}
                                                     </div>
-
-                                                    {/* Timer Section */}
                                                     <div className="text-end" style={{minWidth: '80px'}}>
                                                         {canResend ? (
-                                                            <button type="button" onClick={handleSendOTP} className="btn btn-link p-0 text-decoration-none small fw-bold text-primary d-flex align-items-center gap-1">
-                                                                <FaRedo size={12}/> Resend
-                                                            </button>
+                                                            <button type="button" onClick={handleSendOTP} className="btn btn-link p-0 text-decoration-none small fw-bold text-primary d-flex align-items-center gap-1"><FaRedo size={12}/> Resend</button>
                                                         ) : (
-                                                            <div className="d-flex align-items-center gap-1 text-muted small">
-                                                                <FaClock size={12}/> <span>00:{timer < 10 ? `0${timer}` : timer}</span>
-                                                            </div>
+                                                            <div className="d-flex align-items-center gap-1 text-muted small"><FaClock size={12}/> <span>00:{timer < 10 ? `0${timer}` : timer}</span></div>
                                                         )}
                                                     </div>
                                                 </div>
-
-                                                <button type="button" onClick={handleVerifyOTP} className="btn btn-dark fw-bold rounded-0 w-100 py-3">
-                                                    CONFIRM & VERIFY
-                                                </button>
-                                                <small className="text-muted d-block mt-3 text-center" style={{fontSize:'11px'}}>Demo OTP: 1234</small>
+                                                <button type="button" onClick={handleVerifyOTP} className="btn btn-dark fw-bold rounded-0 w-100 py-3">CONFIRM & VERIFY</button>
+                                                
+                                                {/* RANDOM OTP HINT */}
+                                                <small className="text-muted d-block mt-3 text-center" style={{fontSize:'11px'}}>Demo OTP: {demoOtpValue}</small>
                                             </div>
                                         )}
                                     </div>
@@ -230,35 +262,88 @@ function Register() {
                                         <div className="alert alert-success rounded-0 small d-flex align-items-center gap-2 mb-3 bg-success bg-opacity-10 text-success border-0"><FaCheckCircle /> Verified: <strong>{formData.full_name}</strong></div>
                                         <div className="mb-3"><input className="form-control rounded-0 custom-input" value={formData.phone} disabled/></div>
                                         <div className="mb-3"><input className="form-control rounded-0 custom-input" value={formData.email} disabled/></div>
-                                        
-                                        {/* REMOVED THE TEXT "No password required..." HERE */}
-                                        
                                         <button type="submit" disabled={loading} className="btn btn-dark w-100 py-3 fw-bold rounded-0 mt-2">CREATE ACCOUNT</button>
                                     </div>
                                 )}
                             </>
                         )}
 
-                        {/* PROFESSIONAL FLOW */}
+                        {/* ================= PROFESSIONAL FLOW ================= */}
                         {role !== 'patient' && (
                             <div className="fade-in">
-                                <div className="mb-3"><input name="full_name" className="form-control rounded-0 p-3 custom-input" placeholder="Full Name" onChange={handleChange} required/></div>
-                                <div className="row g-2 mb-3">
-                                    <div className="col-6"><input name="email" className="form-control rounded-0 p-3 custom-input" placeholder="Email" onChange={handleChange} required/></div>
-                                    <div className="col-6"><input name="phone" className="form-control rounded-0 p-3 custom-input" placeholder="Phone" onChange={handleChange} required/></div>
-                                </div>
-                                <div className="row g-2 mb-3">
-                                    <div className="col-6"><input name="password" type="password" className="form-control rounded-0 p-3 custom-input" placeholder="Password" onChange={handleChange} required/></div>
-                                    <div className="col-6"><input name="confirm_password" type="password" className="form-control rounded-0 p-3 custom-input" placeholder="Confirm" onChange={handleChange} required/></div>
-                                </div>
                                 
-                                <div className="p-3 bg-light border mb-4 prof-box">
-                                    <div className="row g-2">
-                                        <div className="col-6"><input name="license_id" className="form-control rounded-0 otp-input" placeholder="License ID" onChange={handleChange} required/></div>
-                                        <div className="col-6"><input name="workplace" className="form-control rounded-0 otp-input" placeholder="Workplace" onChange={handleChange} required/></div>
+                                {/* --- STEP 1: VERIFY ID & DOB --- */}
+                                {profStep === 1 && (
+                                    <>
+                                        <div className="text-center mb-4">
+                                            {role === 'doctor' ? <FaUserMd size={40} className="text-primary opacity-50 mb-2"/> : <FaPrescriptionBottleAlt size={40} className="text-success opacity-50 mb-2"/>}
+                                            <p className="small theme-text-muted">Enter your official credentials to proceed.</p>
+                                        </div>
+                                        <div className="mb-3">
+                                            <label className="small fw-bold theme-text-muted mb-1">
+                                                {role === 'doctor' ? 'MEDICAL LICENSE ID' : 'PHARMACY REGISTRATION ID'}
+                                            </label>
+                                            <input name="license_id" className="form-control rounded-0 p-3 custom-input" 
+                                                placeholder={role === 'doctor' ? 'e.g. MCI-2024-001' : 'e.g. PH-REG-101'} 
+                                                onChange={handleChange} value={formData.license_id} required/>
+                                        </div>
+                                        <div className="mb-4">
+                                            <label className="small fw-bold theme-text-muted mb-1">DATE OF BIRTH</label>
+                                            <input name="dob" type="date" className="form-control rounded-0 p-3 custom-input" 
+                                                onChange={handleChange} value={formData.dob} required/>
+                                            
+                                            {/* DYNAMIC DEMO HINT FROM BACKEND */}
+                                            <small className="text-muted d-block mt-2" style={{fontSize: '11px', opacity: 0.8}}>
+                                                Demo: <span className="fw-bold">{profDemo.id}</span> • <span className="fw-bold">{profDemo.dob}</span>
+                                            </small>
+                                        </div>
+                                        <button type="button" onClick={verifyProfessional} disabled={loading} className="btn btn-primary w-100 py-3 fw-bold rounded-0">
+                                            {loading ? <FaSpinner className="fa-spin"/> : "VERIFY CREDENTIALS"}
+                                        </button>
+                                    </>
+                                )}
+
+                                {/* --- STEP 2: FILL DETAILS --- */}
+                                {profStep === 2 && (
+                                    <div className="animate-slide-up">
+                                        <div className="alert alert-success rounded-0 small d-flex align-items-center gap-2 mb-3 bg-success bg-opacity-10 text-success border-0">
+                                            <FaCheckCircle /> Identity Verified
+                                        </div>
+
+                                        <div className="mb-3">
+                                            <label className="small fw-bold theme-text-muted mb-1">FULL NAME</label>
+                                            <input name="full_name" className="form-control rounded-0 p-3 bg-light text-muted" value={formData.full_name} disabled/>
+                                        </div>
+                                        <div className="mb-3">
+                                            <label className="small fw-bold theme-text-muted mb-1">WORKPLACE</label>
+                                            <input name="workplace" className="form-control rounded-0 p-3 bg-light text-muted" value={formData.workplace} disabled/>
+                                        </div>
+                                        <div className="mb-3">
+                                            <label className="small fw-bold theme-text-muted mb-1">OFFICIAL EMAIL (Auto-Fetched)</label>
+                                            <input name="email" className="form-control rounded-0 p-3 bg-light text-muted" value={formData.email} disabled/>
+                                        </div>
+
+                                        <hr className="my-4"/>
+
+                                        <div className="mb-3">
+                                            <label className="small fw-bold theme-text-muted mb-1">MOBILE NUMBER</label>
+                                            <input name="phone" className="form-control rounded-0 p-3 custom-input" placeholder="Enter Mobile Number" onChange={handleChange} required/>
+                                        </div>
+                                        <div className="row g-2 mb-4">
+                                            <div className="col-6">
+                                                <label className="small fw-bold theme-text-muted mb-1">NEW PASSWORD</label>
+                                                <input name="password" type="password" className="form-control rounded-0 p-3 custom-input" placeholder="********" onChange={handleChange} required/>
+                                            </div>
+                                            <div className="col-6">
+                                                <label className="small fw-bold theme-text-muted mb-1">CONFIRM</label>
+                                                <input name="confirm_password" type="password" className="form-control rounded-0 p-3 custom-input" placeholder="********" onChange={handleChange} required/>
+                                            </div>
+                                        </div>
+                                        
+                                        <button type="submit" disabled={loading} className="btn btn-dark w-100 py-3 fw-bold rounded-0">REGISTER NOW</button>
+                                        <button type="button" onClick={() => setProfStep(1)} className="btn btn-link w-100 mt-2 text-decoration-none small text-muted">Back to Verify</button>
                                     </div>
-                                </div>
-                                <button type="submit" disabled={loading} className="btn btn-dark w-100 py-3 fw-bold rounded-0">REGISTER</button>
+                                )}
                             </div>
                         )}
                     </form>
@@ -279,9 +364,11 @@ function Register() {
         .prof-box, .id-box { background-color: #f8fafc; border-color: #e2e8f0; }
         .user-select-all { user-select: all; }
         
-        /* OTP BOX STYLES */
         .otp-box-input { border: 1px solid #e2e8f0; background-color: #f8fafc; color: #334155; }
         .otp-box-input:focus { border-color: #3b82f6; box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1); background-color: #fff; }
+
+        .animate-slide-up { animation: slideUp 0.4s ease-out; }
+        @keyframes slideUp { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
 
         /* DARK MODE */
         body.dark-mode .page-background { background-color: #0f172a !important; }
